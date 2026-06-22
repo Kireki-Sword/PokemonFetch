@@ -1,6 +1,6 @@
 async function fetchData(){
     try{
-        const pokemon = document.getElementById("pokemonName").value.toLowerCase();
+        const pokemonName = document.getElementById("pokemonName").value.trim().toLowerCase();
 
 
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
